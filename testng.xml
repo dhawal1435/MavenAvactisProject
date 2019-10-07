@@ -5,8 +5,8 @@
   <test thread-count="5" name="FirefoxTest">
   <parameter name="browser" value="firefox"> </parameter>
    <classes>   	   
-     <class name="Application.AvactisRegisteredUser"/>
-     <class name="Application.AvactisGuestUser"/>
+     <class name="ApplicationTest.AvactisRegisteredUser"/>
+     <class name="ApplicationTest.AvactisGuestUser"/>
    </classes>
   </test> <!-- Test -->
 

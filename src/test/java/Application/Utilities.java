@@ -41,7 +41,7 @@ public class Utilities
 	@DataProvider
 	public static Object[][] provideAdminLoginData() throws IOException
 	{
-		FileReader file = new FileReader("C:\\Users\\kejal\\eclipse-workspace\\MavenAvactisProject\\src\\test\\java\\Application\\AdminData.csv");
+		FileReader file = new FileReader("C:\\Users\\kejal\\eclipse-workspace\\MavenAvactisProject\\src\\test\\resources\\AdminData.csv");
 		BufferedReader reader = new BufferedReader(file);
 		List<String> records = new ArrayList<String>();
 		String line;
@@ -86,7 +86,7 @@ public class Utilities
 		@DataProvider
 		public static Object[][] provideCustomerRegisterData() throws IOException
 		{
-			FileReader file = new FileReader("C:\\Users\\kejal\\eclipse-workspace\\MavenAvactisProject\\src\\test\\java\\Application\\CustomerRegisterData.csv");
+			FileReader file = new FileReader("C:\\Users\\kejal\\eclipse-workspace\\MavenAvactisProject\\src\\test\\resources\\CustomerRegisterData.csv");
 			BufferedReader reader = new BufferedReader(file);
 			List<String> records = new ArrayList<String>();
 			String line;
@@ -130,7 +130,7 @@ public class Utilities
 		@DataProvider
 		public static Object[][] provideCustomerSignInData() throws IOException
 		{
-			FileReader file = new FileReader("C:\\Users\\kejal\\eclipse-workspace\\MavenAvactisProject\\src\\test\\java\\Application\\CustomerSignInData.csv");
+			FileReader file = new FileReader("C:\\Users\\kejal\\eclipse-workspace\\MavenAvactisProject\\src\\test\\resources\\CustomerSignInData.csv");
 			BufferedReader reader = new BufferedReader(file);
 			List<String> records = new ArrayList<String>();
 			String line;
@@ -175,7 +175,7 @@ public class Utilities
 		@DataProvider
 		public static Object[][] provideProductData() throws IOException
 		{
-			FileReader file = new FileReader("C:\\Users\\kejal\\eclipse-workspace\\MavenAvactisProject\\src\\test\\java\\Application\\SelectProductData.csv");
+			FileReader file = new FileReader("C:\\Users\\kejal\\eclipse-workspace\\MavenAvactisProject\\src\\test\\resources\\SelectProductData.csv");
 			BufferedReader reader = new BufferedReader(file);
 			List<String> records = new ArrayList<String>();
 			String line;
@@ -219,9 +219,9 @@ public class Utilities
 		@DataProvider
 		public static Object[][] provideGuestUserData() throws IOException
 		{
-			FileReader file = new FileReader("C:\\Users\\kejal\\eclipse-workspace\\MavenAvactisProject\\src\\test\\java\\Application\\GuestUserData.csv");
-			BufferedReader reader = new BufferedReader(file);
-			List<String> records = new ArrayList<String>();
+				FileReader file = new FileReader("C:\\Users\\kejal\\eclipse-workspace\\MavenAvactisProject\\src\\test\\resources\\GuestUserData.csv");
+				BufferedReader reader = new BufferedReader(file);
+				List<String> records = new ArrayList<String>();
 			String line;
 			int rowCount = 0;
 			int colCount = 0;

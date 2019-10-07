@@ -8,6 +8,7 @@ import Application.CheckoutPage;
 import Application.CustomerHomePage;
 import Application.CustomerSignedIn;
 import Application.OrderedPage;
+import Application.ProductHomePage;
 import Application.ProductSelectPage;
 import Application.ProductVerifyPage;
 import Application.Utilities;
@@ -15,7 +16,6 @@ import Application.adminCustomerPage;
 
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
-
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
@@ -33,9 +33,10 @@ public class AvactisGuestUser
 	String filename;
 	String userName, emailId, address1;
 	String orderId, finalPrice;
+	String actualPage, expectedPage;
 	
 	ProductSelectPage productSelect;
-	Application.ProductHomePage product;
+	ProductHomePage product;
 	CustomerSignedIn custSignedIn;
  	ProductVerifyPage productVerify;
 	CheckoutPage checkout;
@@ -68,10 +69,10 @@ public class AvactisGuestUser
 		  } 
 		  catch (Exception e) 
 		  {
-			  e.printStackTrace();
+			  log.error("Exception occcured :" +e.getMessage());
 		  }
 	  }
-  
+
   @Test            
   public void customerHome() throws InterruptedException      
   {
@@ -84,8 +85,7 @@ public class AvactisGuestUser
 	  }
 	  catch(Exception e)
 	  {
-//		  System.out.println("In method Customer Home  " + e);
-		  e.printStackTrace();
+		  log.error("Exception occcured :" +e.getMessage());
 	  }
   }
 
@@ -96,7 +96,7 @@ public class AvactisGuestUser
   {
 	  try
 	  {
-		  Application.ProductHomePage product = new Application.ProductHomePage(driver);
+		  ProductHomePage product = new ProductHomePage(driver);
 		  product.get();
 		  product.selectproduct(productName);	  
 		 
@@ -109,8 +109,7 @@ public class AvactisGuestUser
 	  
 	  catch(Exception e)
 	  {
-//		  System.out.println("in method ProductHomePage  " + e);
-		  e.printStackTrace();
+		  log.error("Exception occcured :" +e.getMessage());
 	  }
   }
     
@@ -119,15 +118,14 @@ public class AvactisGuestUser
   {
 	  try
 	  {
-		  Application.ProductHomePage product = new Application.ProductHomePage(driver);
+		  ProductHomePage product = new ProductHomePage(driver);
 		  product.get();
 		  product.ViewCart();
 		  log.info("Cart viewed");
 	  }
 	  catch(Exception e)
 	  {
-//		  System.out.println("in method ProductHomePage  " + e);
-		  e.printStackTrace();
+		  log.error("Exception occcured :" +e.getMessage());
 	  }
   }
   
@@ -144,8 +142,7 @@ public class AvactisGuestUser
 	  }
 	  catch(Exception e)
 	  {
-//		  System.out.println("In Method verifyProduct  " + e);   
-		  e.printStackTrace();
+		  log.error("Exception occcured :" +e.getMessage());
 	  }
   }
   
@@ -163,8 +160,7 @@ public class AvactisGuestUser
 	  }
 	  catch(Exception e)
 	  {
-//		  System.out.println("in Mehtod clickCheckout  " +e);
-		  e.printStackTrace();
+		  log.error("Exception occcured :" +e.getMessage());
 	  }
   }
   
@@ -196,8 +192,7 @@ public class AvactisGuestUser
 	  }                                                                           //END OF TRY
 	  catch(Exception e)
 	  {
-//		  System.out.println("in method CustomerRegister  " + e);
-		  e.printStackTrace();
+		  log.error("Exception occcured :" +e.getMessage());
 	  }	  
   }
  
@@ -216,8 +211,7 @@ public class AvactisGuestUser
 	  }
 	  catch(Exception e)
 	  {
-//		  System.out.println("in Mehtod clickContinueCheckout  " +e);
-		  e.printStackTrace();
+		  log.error("Exception occcured :" +e.getMessage());
 	  }
   }
  
@@ -234,8 +228,7 @@ public class AvactisGuestUser
 	  }
 	  catch(Exception e)
 	  {
-//		  System.out.println("in Mehtod selectBillingOption  " +e);
-		  e.printStackTrace();
+		  log.error("Exception occcured :" +e.getMessage());
 	  }
 	  
   }
@@ -253,8 +246,7 @@ public class AvactisGuestUser
 	  }
 	  catch(Exception e)
 	  {
-//		  System.out.println("in Mehtod selectBillingOption  " +e);
-		  e.printStackTrace();
+		  log.error("Exception occcured :" +e.getMessage());
 	  }
 	  
   }
@@ -272,8 +264,7 @@ public class AvactisGuestUser
 	  }
 	  catch(Exception e)
 	  {
-//		  System.out.println("in Mehtod clickContinueCheckout  " +e);
-		  e.printStackTrace();
+		  log.error("Exception occcured :" +e.getMessage());
 	  }
 	  
   }
@@ -291,8 +282,7 @@ public class AvactisGuestUser
 	  }
 	  catch(Exception e)
 	  {
-//		  System.out.println("in Mehtod clickContinueCheckout  " +e);
-		  e.printStackTrace();
+		  log.error("Exception occcured :" +e.getMessage());
 	  }
 	  
   }
@@ -317,29 +307,38 @@ public class AvactisGuestUser
   	  }
   	  catch(Exception e)
   	  {
-// 		  System.out.println("in Method VerifyOrder  " + e);
-  		  e.printStackTrace();
+  		  log.error("Exception occcured :" +e.getMessage());
   	  }
   }	  	
 
 //////// ADDMIN ACTIVITIES //////////////////////////////////////////////////////////////////////////////////
 
   @Test(dependsOnMethods ="verifyOrder", dataProviderClass = Utilities.class, dataProvider = "provideAdminLoginData")  
+  //@Test(dataProviderClass = Utilities.class, dataProvider = "provideAdminLoginData")  	 
   public void adminLogin(String adminId, String cred)   
   {
+	  expectedPage = "http://localhost/Avactis/avactis-system/admin/signin.php";
 	  try
 	  {
 		  driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-		  url="http://localhost/avactis/avactis-system/admin/signin.php";
+		  url="http://localhost/Avactis/avactis-system/admin/signin.php";
 		  AdminLoginPage newAdminPage = new AdminLoginPage(driver);
 		  newAdminPage.get();
 		  newAdminPage.doLogin(adminId, cred);
-		  log.info("logged in with admin");
+
+		  filename="AdminSignIn ";
+	      Utilities.screenshot(filename, driver);
+		  driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		  
+	      actualPage= driver.getCurrentUrl();		  
+	      if(actualPage.equals(expectedPage))   
+		  {
+	    	  newAdminPage.clearWebElements();              // CLEAR ALL TEXTBOXES FOR NEXT SET OF INPUTS
+		  }
 	  }
 	  catch(Exception e)
 	  {
-//		  System.out.println("adminLogin  " +e);
-		  e.printStackTrace();
+		  log.error("Exception occcured :" +e.getMessage());
 	  }	  
   }
   
@@ -348,6 +347,7 @@ public class AvactisGuestUser
   {
 	  try
 	  {
+		  log.info("logged in with admin");
 		  filename="AdminRegisteration";
 	      Utilities.screenshot(filename, driver);
 	      Thread.sleep(3000);
@@ -359,8 +359,7 @@ public class AvactisGuestUser
 	  }
 	  catch(Exception e)
 	  {
-//		  System.out.println("adminLogin  " +e);
-		  e.printStackTrace();
+		  log.error("Exception occcured :" +e.getMessage());
 	  }
   }
 
@@ -379,8 +378,7 @@ public class AvactisGuestUser
 	  }
 	  catch(Exception e)
 	  {
-//		  System.out.println("adminLogin  " +e);
-		  e.printStackTrace();
+		  log.error("Exception occcured :" +e.getMessage());
 	  }
   }
   

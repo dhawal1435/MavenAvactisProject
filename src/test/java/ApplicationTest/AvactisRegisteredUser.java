@@ -20,6 +20,7 @@ import Application.CustomerHomePage;
 import Application.CustomerRegisterPage;
 import Application.CustomerSignedIn;
 import Application.OrderedPage;
+import Application.ProductHomePage;
 import Application.ProductSelectPage;
 import Application.ProductVerifyPage;
 import Application.Utilities;
@@ -33,9 +34,10 @@ public class AvactisRegisteredUser
 	String filename;	
 	String userName, emailId, address1,address2;
 	String orderId,	finalPrice;
+	 String actualPage, expectedPage;
 	
 	ProductSelectPage productSelect;
-	Application.ProductHomePage product;
+	ProductHomePage product;
 	CustomerSignedIn custSignedIn;
 	ProductVerifyPage productVerify;
 	CheckoutPage checkout;
@@ -47,8 +49,8 @@ public class AvactisRegisteredUser
   @BeforeClass
   public void init(String browser) 
   {
-	  try 
-	  {
+	  try  
+	  { 
 		  if(browser.equalsIgnoreCase("chrome"))
 		  {
 			  System.setProperty("webdriver.chrome.driver","src\\test\\resources\\chromedriver.exe");
@@ -84,8 +86,7 @@ public class AvactisRegisteredUser
 	  }
 	  catch(Exception e)
 	  {
-//		  System.out.println("In method Customer Home ");
-		  e.printStackTrace();
+		  log.error("Exception occcured :" +e.getMessage());
 	  }
   }
 
@@ -95,7 +96,7 @@ public class AvactisRegisteredUser
 		                       String country, String state, String zip, String city, String address1, String address2, 
 		                       String phone) throws InterruptedException, IOException
   {	 
-	  String expectedpage = "http://localhost/Avactis/register.php"; 
+	  expectedPage = "http://localhost/Avactis/register.php"; 
 	  try
 	  {
 		  this.address1=address1;
@@ -116,27 +117,32 @@ public class AvactisRegisteredUser
 		  custReg.inputAddress2(address2);
 		  custReg.inputPhone(phone);
 		  custReg.clickOnRegister();
+		      
+//		  if(!password.equals(rePassword)) 
+//		  {
+//			  assertEquals(actualPage,expectedPage);
+//			  log.info("Passwords do not match, hence negative test case passed");
+//		  }
 		  
 		  Thread.sleep(3000);
 		  filename="Registeration";
 	      Utilities.screenshot(filename, driver);      //TAKE SCREENSHOT AFTER CLICK ON REGISTER
 	      
 	      Thread.sleep(3000);
-	      String actualpage= driver.getCurrentUrl();
-	      
-	      if(actualpage.equals(expectedpage))   
+	      actualPage= driver.getCurrentUrl();
+	      if(actualPage.equals(expectedPage))   
 		  {
 			  custReg.clearWebElements();              // CLEAR ALL TEXTBOXES FOR NEXT SET OF INPUTS
 		  }		  
 	  }                                                //END OF TRY
 	  catch(Exception e)
 	  {
-//		  System.out.println("in method CustomerRegister");
-		  e.printStackTrace();
+		  log.error("Exception occcured :" +e.getMessage());
 	  }
 	  
 	}                                                  //END OF METHOD CustomerRegister                       
 	
+  
 //*********************************  PRODUCT PART ********************************************************************
   
   @Test(dependsOnMethods = "CustomerRegister", dataProviderClass = Utilities.class, dataProvider = "provideCustomerSignInData")
@@ -147,13 +153,14 @@ public class AvactisRegisteredUser
 	  try
 	  {
 		  driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+//        LOGOFF AND SIGNIN AGAIN		  
 //		  CustomerHomePage cust = new CustomerHomePage(driver);
 //		  cust.get();
 //		  cust.doLogin(email, password);		  
 	  }
 	  catch(Exception e)
 	  {
-		  System.out.println("in method CustomerSignIn  " + e);
+		  log.error("Exception occcured :" +e.getMessage());
 	  }
   }
  
@@ -169,8 +176,7 @@ public class AvactisRegisteredUser
 	  }
 	  catch(Exception e)
 	  {
-//		  System.out.println("in method CustomerSignedInPage  " + e);
-		  e.printStackTrace();
+		  log.error("Exception occcured :" +e.getMessage());
 	  }	  
   }  
  
@@ -179,7 +185,7 @@ public class AvactisRegisteredUser
   {
 	  try
 	  {
-		  Application.ProductHomePage product = new Application.ProductHomePage(driver);
+		  ProductHomePage product = new ProductHomePage(driver);
 		  product.get();
 		  product.selectproduct(productName);	  
 		 
@@ -188,11 +194,11 @@ public class AvactisRegisteredUser
 		  productSelect.addInCart();
 		  productSelect.goToHome();
 		  log.info(productName + "product selected ");
+		 // Assert.assertEquals(driver.getCurrentUrl(), url);
 	  }	  
 	  catch(Exception e)
 	  {
-//		  System.out.println("in method ProductHomePage  " + e);
-		  e.printStackTrace();
+		  log.error("Exception occcured :" +e.getMessage());
 	  }
   }
   
@@ -201,15 +207,14 @@ public class AvactisRegisteredUser
   {
 	  try
 	  {
-		  Application.ProductHomePage product = new Application.ProductHomePage(driver);
+		  ProductHomePage product = new ProductHomePage(driver);
 		  product.get();
 		  product.ViewCart();
 		  log.info("Cart viewed");
 	  }
 	  catch(Exception e)
 	  {
-//		  System.out.println("in method ProductHomePage  " + e);
-		  e.printStackTrace();
+		  log.error("Exception occcured :" +e.getMessage());	  
 	  }
   }
   
@@ -226,8 +231,7 @@ public class AvactisRegisteredUser
 	  }
 	  catch(Exception e)
 	  {
-//		  System.out.println("In Method verifyProduct  " + e);   
-		  e.printStackTrace();
+		  log.error("Exception occcured :" +e.getMessage());
 	  }	  
   }
 
@@ -239,14 +243,12 @@ public class AvactisRegisteredUser
 		  url="http://localhost/Avactis/cart.php";
 		  productSelect = new ProductSelectPage(driver, url);
 		  productSelect.get();
-		 
 		  productSelect.clickcheckoutbutton();
 		  log.info("checkout button clicked");
 	  }
 	  catch(Exception e)
 	  {
-//		  System.out.println("in Method clickCheckout  " +e);
-		  e.printStackTrace();
+		  log.error("Exception occcured :" +e.getMessage());
 	  }
   }
   
@@ -258,15 +260,14 @@ public class AvactisRegisteredUser
 		  url="http://localhost/Avactis/checkout.php";
 		  CheckoutPage checkout = new CheckoutPage(driver, url);     
 		  checkout.get();
-		  
-		  checkout.verifyaddress(address1,address2);   //VERIFY ADDRESSES0
 		  checkout.click1();
+		  checkout.verifyaddress(address1,address2);   //VERIFY ADDRESSES0
+		  
      	  log.info("Continue checkout button clicked");
 	  }
 	  catch(Exception e)
 	  {
-//		  System.out.println("in Method clickContinueCheckout  " +e);
-		  e.printStackTrace();
+		  log.error("Exception occcured :" +e.getMessage());
 	  }	  
   }
 
@@ -283,8 +284,7 @@ public class AvactisRegisteredUser
 	  }
 	  catch(Exception e)
 	  {
-//		  System.out.println("in Method selectBillingOption  " +e);
-		  e.printStackTrace();
+		  log.error("Exception occcured :" +e.getMessage());
 	  }
   }
   
@@ -301,8 +301,7 @@ public class AvactisRegisteredUser
 	  }
 	  catch(Exception e)
 	  {
-//		  System.out.println("in Method selectBillingOption  " +e);
-		  e.printStackTrace();
+		  log.error("Exception occcured :" +e.getMessage());
 	  }
   }
    
@@ -319,8 +318,7 @@ public class AvactisRegisteredUser
 	  }
 	  catch(Exception e)
 	  {
-//		  System.out.println("in Method clickContinueCheckout  " +e);
-		  e.printStackTrace();
+		  log.error("Exception occcured :" +e.getMessage());
 	  }	  
   }
  
@@ -337,8 +335,7 @@ public class AvactisRegisteredUser
 	  }
 	  catch(Exception e)
 	  {
-//		  System.out.println("in Method clickContinueCheckout  " +e);
-		  e.printStackTrace();
+		  log.error("Exception occcured :" +e.getMessage());
 	  }
   }
 
@@ -362,29 +359,37 @@ public class AvactisRegisteredUser
   	  }
   	  catch(Exception e)
   	  {
-//  		  System.out.println("in Method VerifyOrder  " + e);
-  		  e.printStackTrace();
+  		log.error("Exception occcured :" +e.getMessage());  	  
   	  }
   }	  	
-  
+
 //////// ADMIN ACTIVITIES //////////////////////////////////////////////////////////////////////////////////
 
-  @Test(dependsOnMethods ="verifyOrder", dataProviderClass = Utilities.class, dataProvider = "provideAdminLoginData")  
+ @Test(dependsOnMethods ="verifyOrder", dataProviderClass = Utilities.class, dataProvider = "provideAdminLoginData")
+ // @Test(dataProviderClass = Utilities.class, dataProvider = "provideAdminLoginData")
   public void adminLogin(String adminId, String cred)   
   {
+	  expectedPage = "http://localhost/Avactis/avactis-system/admin/signin.php";
 	  try
 	  {
 		  driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-		  url="http://localhost/avactis/avactis-system/admin/signin.php";
+		  url="http://localhost/Avactis/avactis-system/admin/signin.php";
 		  AdminLoginPage newAdminPage = new AdminLoginPage(driver);
 		  newAdminPage.get();
 		  newAdminPage.doLogin(adminId, cred);
-		  log.info("logged in with admin");
+		  filename="AdminSignIn ";
+	      Utilities.screenshot(filename, driver);
+		  driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+	      actualPage= driver.getCurrentUrl();		  
+		  
+	      if(actualPage.equals(expectedPage))   
+		  {
+	    	  newAdminPage.clearWebElements();              // CLEAR ALL TEXTBOXES FOR NEXT SET OF INPUTS
+		  }
 	  }
 	  catch(Exception e)
 	  {
-//		  System.out.println("adminLogin  " +e);
-		  e.printStackTrace();
+		  log.error("Exception occcured :" +e.getMessage());
 	  }	  
   }
   
@@ -393,6 +398,7 @@ public class AvactisRegisteredUser
   {
 	  try
 	  {
+		  log.info("logged in with admin");
 		  filename="AdminRegisteration";
 	      Utilities.screenshot(filename, driver);
 	      Thread.sleep(3000);
@@ -404,11 +410,9 @@ public class AvactisRegisteredUser
 	  }
 	  catch(Exception e)
 	  {
-	//	  System.out.println("adminLogin  " +e);
-		  e.printStackTrace();
+		  log.error("Exception occcured :" +e.getMessage());	
 	  }
   }
-
   
  ///email id and price during login and after placing order 
   @Test(dependsOnMethods = "clickOnCustomer")
@@ -426,8 +430,7 @@ public class AvactisRegisteredUser
 	  }
 	  catch(Exception e)
 	  {
-//		  System.out.println("adminLogin  " +e);
-		  e.printStackTrace();
+		  log.error("Exception occcured :" +e.getMessage());
 	  }
   }
   

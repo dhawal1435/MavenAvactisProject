@@ -295,3 +295,9 @@ INFO    2019-10-06 15:57:13,901 [main] Application.AvactisRegisteredUser  - Orde
 INFO    2019-10-06 15:57:28,212 [main] Application.AvactisRegisteredUser  - logged in with admin
 INFO    2019-10-06 15:57:37,083 [main] Application.AvactisRegisteredUser  - Customer option clicked (in Admin)
 INFO    2019-10-06 15:58:02,801 [main] Application.AvactisRegisteredUser  - Order details verified from Admin module 
+INFO    2019-10-07 23:01:51,520 [main] ApplicationTest.AvactisRegisteredUser  - Inside CustomerHome
+INFO    2019-10-07 23:02:08,187 [main] ApplicationTest.AvactisRegisteredUser  - product home page browsed
+INFO    2019-10-07 23:03:34,206 [main] ApplicationTest.AvactisRegisteredUser  - Inside CustomerHome
+INFO    2019-10-07 23:03:34,252 [main] ApplicationTest.AvactisRegisteredUser  - Inside CustomerRegisteration Form
+INFO    2019-10-07 23:03:48,232 [main] ApplicationTest.AvactisRegisteredUser  - Inside CustomerRegisteration Form
+INFO    2019-10-07 23:04:02,024 [main] ApplicationTest.AvactisRegisteredUser  - Inside CustomerRegisteration Form

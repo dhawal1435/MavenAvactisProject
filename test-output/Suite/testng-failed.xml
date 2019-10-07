@@ -4,14 +4,48 @@
   <test thread-count="5" name="FirefoxTest(failed)">
     <parameter name="browser" value="firefox"/>
     <classes>
-      <class name="Application.AvactisRegisteredUser">
+      <class name="ApplicationTest.AvactisRegisteredUser">
         <methods>
-          <include name="clickOnCustomer"/>
-          <include name="adminLogin"/>
+          <include name="CustomerRegister"/>
+          <include name="clickPlaceOrder"/>
           <include name="checkDetails"/>
           <include name="init"/>
+          <include name="clickOnContinueCheckout2"/>
+          <include name="CustomerSignIn"/>
+          <include name="clickCheckout"/>
+          <include name="CustomerHome"/>
+          <include name="adminLogin"/>
+          <include name="ProductHomePage"/>
+          <include name="clickViewCart"/>
+          <include name="verifyOrder"/>
+          <include name="CustomerSignedInPage"/>
+          <include name="selectShippingOption"/>
+          <include name="selectBillingOption"/>
+          <include name="clickOnContinueCheckout"/>
+          <include name="verifyProduct"/>
+          <include name="clickOnCustomer"/>
         </methods>
-      </class> <!-- Application.AvactisRegisteredUser -->
+      </class> <!-- ApplicationTest.AvactisRegisteredUser -->
+      <class name="ApplicationTest.AvactisGuestUser">
+        <methods>
+          <include name="clickCheckout"/>
+          <include name="adminLogin"/>
+          <include name="ProductHomePage"/>
+          <include name="clickViewCart"/>
+          <include name="verifyOrder"/>
+          <include name="clickPlaceOrder"/>
+          <include name="checkDetails"/>
+          <include name="init"/>
+          <include name="clickOnContinueCheckout2"/>
+          <include name="clickOnContinueCheckout"/>
+          <include name="verifyProduct"/>
+          <include name="clickOnCustomer"/>
+          <include name="customerHome"/>
+          <include name="selectShippingOption"/>
+          <include name="guestCustomerDetails"/>
+          <include name="selectBillingOption"/>
+        </methods>
+      </class> <!-- ApplicationTest.AvactisGuestUser -->
     </classes>
   </test> <!-- FirefoxTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->
