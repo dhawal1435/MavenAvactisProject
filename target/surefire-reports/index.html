@@ -1,0 +1,1134 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Suite">
+              <span class="suite-name border-passed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Suite">
+                    <span>C:\Users\kejal\eclipse-workspace\MavenAvactisProject\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">44 methods,   44 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Application.AvactisRegisteredUser" hash-for-method="CustomerHome">CustomerHome</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Application.AvactisRegisteredUser" hash-for-method="CustomerRegister(test1234@testsite.com, Test@1234, Test@1234, tester, mike, United States, Alabama, 12345, Pune, stre...)">CustomerRegister(test1234@testsite.com, Test@1234, Test@1234, tester, mike, United States, Alabama, 12345, Pune, stre...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Application.AvactisRegisteredUser" hash-for-method="CustomerRegister(test1@gmail.com, password1, password112, name1, lastname1, United States, Alabama, zip, city, addres...)">CustomerRegister(test1@gmail.com, password1, password112, name1, lastname1, United States, Alabama, zip, city, addres...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Application.AvactisRegisteredUser" hash-for-method="CustomerRegister(test1, password1, password2, name1, lastname1, India, Goa, zip, city, address1, address2, 12345)">CustomerRegister(test1, password1, password2, name1, lastname1, India, Goa, zip, city, address1, address2, 12345)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Application.AvactisRegisteredUser" hash-for-method="CustomerSignIn(test1234@testsite.com, Test@1234)">CustomerSignIn(test1234@testsite.com, Test@1234)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Application.AvactisRegisteredUser" hash-for-method="CustomerSignedInPage">CustomerSignedInPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Application.AvactisGuestUser" hash-for-method="ProductHomePage(Custom T-Shirt, $25.99, http://localhost/Avactis/product-info.php?Custom_T-Shirt_-_Upload_your_own_d...)">ProductHomePage(Custom T-Shirt, $25.99, http://localhost/Avactis/product-info.php?Custom_T-Shirt_-_Upload_your_own_d...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Application.AvactisRegisteredUser" hash-for-method="ProductHomePage(HP TouchSmart, $799.99, http://localhost/Avactis/product-info.php?HP_TouchSmart-pid31.html)">ProductHomePage(HP TouchSmart, $799.99, http://localhost/Avactis/product-info.php?HP_TouchSmart-pid31.html)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Application.AvactisRegisteredUser" hash-for-method="ProductHomePage(EKTORP Neckroll, $9.99, http://localhost/Avactis/product-info.php?EKTORP_Neckroll-pid169.html)">ProductHomePage(EKTORP Neckroll, $9.99, http://localhost/Avactis/product-info.php?EKTORP_Neckroll-pid169.html)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Application.AvactisGuestUser" hash-for-method="ProductHomePage(EKTORP Neckroll, $9.99, http://localhost/Avactis/product-info.php?EKTORP_Neckroll-pid169.html)">ProductHomePage(EKTORP Neckroll, $9.99, http://localhost/Avactis/product-info.php?EKTORP_Neckroll-pid169.html)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Application.AvactisRegisteredUser" hash-for-method="ProductHomePage(Custom T-Shirt, $25.99, http://localhost/Avactis/product-info.php?Custom_T-Shirt_-_Upload_your_own_d...)">ProductHomePage(Custom T-Shirt, $25.99, http://localhost/Avactis/product-info.php?Custom_T-Shirt_-_Upload_your_own_d...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Application.AvactisGuestUser" hash-for-method="ProductHomePage(HP TouchSmart, $799.99, http://localhost/Avactis/product-info.php?HP_TouchSmart-pid31.html)">ProductHomePage(HP TouchSmart, $799.99, http://localhost/Avactis/product-info.php?HP_TouchSmart-pid31.html)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Application.AvactisRegisteredUser" hash-for-method="adminLogin(testadmin@admin.com, Test@1234)">adminLogin(testadmin@admin.com, Test@1234)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Application.AvactisRegisteredUser" hash-for-method="adminLogin(dhawal11435@gmail.com, Dh@wearetogether143)">adminLogin(dhawal11435@gmail.com, Dh@wearetogether143)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Application.AvactisGuestUser" hash-for-method="adminLogin(testadmin@admin.com, Test@1234)">adminLogin(testadmin@admin.com, Test@1234)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Application.AvactisGuestUser" hash-for-method="adminLogin(dhawal11435@gmail.com, Dh@wearetogether143)">adminLogin(dhawal11435@gmail.com, Dh@wearetogether143)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Application.AvactisRegisteredUser" hash-for-method="checkDetails">checkDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Application.AvactisGuestUser" hash-for-method="checkDetails">checkDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Application.AvactisRegisteredUser" hash-for-method="clickCheckout">clickCheckout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Application.AvactisGuestUser" hash-for-method="clickCheckout">clickCheckout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Application.AvactisRegisteredUser" hash-for-method="clickOnContinueCheckout">clickOnContinueCheckout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Application.AvactisGuestUser" hash-for-method="clickOnContinueCheckout">clickOnContinueCheckout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Application.AvactisRegisteredUser" hash-for-method="clickOnContinueCheckout2">clickOnContinueCheckout2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Application.AvactisGuestUser" hash-for-method="clickOnContinueCheckout2">clickOnContinueCheckout2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Application.AvactisRegisteredUser" hash-for-method="clickOnCustomer">clickOnCustomer</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Application.AvactisGuestUser" hash-for-method="clickOnCustomer">clickOnCustomer</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Application.AvactisRegisteredUser" hash-for-method="clickPlaceOrder">clickPlaceOrder</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Application.AvactisGuestUser" hash-for-method="clickPlaceOrder">clickPlaceOrder</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Application.AvactisGuestUser" hash-for-method="clickViewCart">clickViewCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Application.AvactisRegisteredUser" hash-for-method="clickViewCart">clickViewCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Application.AvactisGuestUser" hash-for-method="customerHome">customerHome</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Application.AvactisGuestUser" hash-for-method="guestCustomerDetails(guest, test, guest1234@testersite.com, United States, 12345, Alabama, pune, address1, address2, 1234...)">guestCustomerDetails(guest, test, guest1234@testersite.com, United States, 12345, Alabama, pune, address1, address2, 1234...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Application.AvactisRegisteredUser" hash-for-method="selectBillingOption">selectBillingOption</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Application.AvactisGuestUser" hash-for-method="selectBillingOption">selectBillingOption</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Application.AvactisGuestUser" hash-for-method="selectShippingOption">selectShippingOption</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Application.AvactisRegisteredUser" hash-for-method="selectShippingOption">selectShippingOption</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Application.AvactisRegisteredUser" hash-for-method="verifyOrder">verifyOrder</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Application.AvactisGuestUser" hash-for-method="verifyOrder">verifyOrder</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Application.AvactisRegisteredUser" hash-for-method="verifyProduct(Custom T-Shirt, $25.99, http://localhost/Avactis/product-info.php?Custom_T-Shirt_-_Upload_your_own_d...)">verifyProduct(Custom T-Shirt, $25.99, http://localhost/Avactis/product-info.php?Custom_T-Shirt_-_Upload_your_own_d...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Application.AvactisRegisteredUser" hash-for-method="verifyProduct(EKTORP Neckroll, $9.99, http://localhost/Avactis/product-info.php?EKTORP_Neckroll-pid169.html)">verifyProduct(EKTORP Neckroll, $9.99, http://localhost/Avactis/product-info.php?EKTORP_Neckroll-pid169.html)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Application.AvactisRegisteredUser" hash-for-method="verifyProduct(HP TouchSmart, $799.99, http://localhost/Avactis/product-info.php?HP_TouchSmart-pid31.html)">verifyProduct(HP TouchSmart, $799.99, http://localhost/Avactis/product-info.php?HP_TouchSmart-pid31.html)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Application.AvactisGuestUser" hash-for-method="verifyProduct(Custom T-Shirt, $25.99, http://localhost/Avactis/product-info.php?Custom_T-Shirt_-_Upload_your_own_d...)">verifyProduct(Custom T-Shirt, $25.99, http://localhost/Avactis/product-info.php?Custom_T-Shirt_-_Upload_your_own_d...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Application.AvactisGuestUser" hash-for-method="verifyProduct(EKTORP Neckroll, $9.99, http://localhost/Avactis/product-info.php?EKTORP_Neckroll-pid169.html)">verifyProduct(EKTORP Neckroll, $9.99, http://localhost/Avactis/product-info.php?EKTORP_Neckroll-pid169.html)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Application.AvactisGuestUser" hash-for-method="verifyProduct(HP TouchSmart, $799.99, http://localhost/Avactis/product-info.php?HP_TouchSmart-pid31.html)">verifyProduct(HP TouchSmart, $799.99, http://localhost/Avactis/product-info.php?HP_TouchSmart-pid31.html)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Application.AvactisRegisteredUser</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="CustomerHome">
+                  </a> <!-- CustomerHome -->
+                  <span class="method-name">CustomerHome</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CustomerRegister(test1234@testsite.com, Test@1234, Test@1234, tester, mike, United States, Alabama, 12345, Pune, stre...)">
+                  </a> <!-- CustomerRegister(test1234@testsite.com, Test@1234, Test@1234, tester, mike, United States, Alabama, 12345, Pune, stre...) -->
+                  <span class="method-name">CustomerRegister</span>
+                  <span class="parameters">(test1234@testsite.com, Test@1234, Test@1234, tester, mike, United States, Alabama, 12345, Pune, street1, lane2, 12345)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CustomerRegister(test1@gmail.com, password1, password112, name1, lastname1, United States, Alabama, zip, city, addres...)">
+                  </a> <!-- CustomerRegister(test1@gmail.com, password1, password112, name1, lastname1, United States, Alabama, zip, city, addres...) -->
+                  <span class="method-name">CustomerRegister</span>
+                  <span class="parameters">(test1@gmail.com, password1, password112, name1, lastname1, United States, Alabama, zip, city, address1, address2, 12345)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CustomerRegister(test1, password1, password2, name1, lastname1, India, Goa, zip, city, address1, address2, 12345)">
+                  </a> <!-- CustomerRegister(test1, password1, password2, name1, lastname1, India, Goa, zip, city, address1, address2, 12345) -->
+                  <span class="method-name">CustomerRegister</span>
+                  <span class="parameters">(test1, password1, password2, name1, lastname1, India, Goa, zip, city, address1, address2, 12345)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CustomerSignIn(test1234@testsite.com, Test@1234)">
+                  </a> <!-- CustomerSignIn(test1234@testsite.com, Test@1234) -->
+                  <span class="method-name">CustomerSignIn</span>
+                  <span class="parameters">(test1234@testsite.com, Test@1234)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CustomerSignedInPage">
+                  </a> <!-- CustomerSignedInPage -->
+                  <span class="method-name">CustomerSignedInPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ProductHomePage(HP TouchSmart, $799.99, http://localhost/Avactis/product-info.php?HP_TouchSmart-pid31.html)">
+                  </a> <!-- ProductHomePage(HP TouchSmart, $799.99, http://localhost/Avactis/product-info.php?HP_TouchSmart-pid31.html) -->
+                  <span class="method-name">ProductHomePage</span>
+                  <span class="parameters">(HP TouchSmart, $799.99, http://localhost/Avactis/product-info.php?HP_TouchSmart-pid31.html)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ProductHomePage(EKTORP Neckroll, $9.99, http://localhost/Avactis/product-info.php?EKTORP_Neckroll-pid169.html)">
+                  </a> <!-- ProductHomePage(EKTORP Neckroll, $9.99, http://localhost/Avactis/product-info.php?EKTORP_Neckroll-pid169.html) -->
+                  <span class="method-name">ProductHomePage</span>
+                  <span class="parameters">(EKTORP Neckroll, $9.99, http://localhost/Avactis/product-info.php?EKTORP_Neckroll-pid169.html)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ProductHomePage(Custom T-Shirt, $25.99, http://localhost/Avactis/product-info.php?Custom_T-Shirt_-_Upload_your_own_d...)">
+                  </a> <!-- ProductHomePage(Custom T-Shirt, $25.99, http://localhost/Avactis/product-info.php?Custom_T-Shirt_-_Upload_your_own_d...) -->
+                  <span class="method-name">ProductHomePage</span>
+                  <span class="parameters">(Custom T-Shirt, $25.99, http://localhost/Avactis/product-info.php?Custom_T-Shirt_-_Upload_your_own_design-pid35.html)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="adminLogin(testadmin@admin.com, Test@1234)">
+                  </a> <!-- adminLogin(testadmin@admin.com, Test@1234) -->
+                  <span class="method-name">adminLogin</span>
+                  <span class="parameters">(testadmin@admin.com, Test@1234)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="adminLogin(dhawal11435@gmail.com, Dh@wearetogether143)">
+                  </a> <!-- adminLogin(dhawal11435@gmail.com, Dh@wearetogether143) -->
+                  <span class="method-name">adminLogin</span>
+                  <span class="parameters">(dhawal11435@gmail.com, Dh@wearetogether143)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkDetails">
+                  </a> <!-- checkDetails -->
+                  <span class="method-name">checkDetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickCheckout">
+                  </a> <!-- clickCheckout -->
+                  <span class="method-name">clickCheckout</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickOnContinueCheckout">
+                  </a> <!-- clickOnContinueCheckout -->
+                  <span class="method-name">clickOnContinueCheckout</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickOnContinueCheckout2">
+                  </a> <!-- clickOnContinueCheckout2 -->
+                  <span class="method-name">clickOnContinueCheckout2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickOnCustomer">
+                  </a> <!-- clickOnCustomer -->
+                  <span class="method-name">clickOnCustomer</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickPlaceOrder">
+                  </a> <!-- clickPlaceOrder -->
+                  <span class="method-name">clickPlaceOrder</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickViewCart">
+                  </a> <!-- clickViewCart -->
+                  <span class="method-name">clickViewCart</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="selectBillingOption">
+                  </a> <!-- selectBillingOption -->
+                  <span class="method-name">selectBillingOption</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="selectShippingOption">
+                  </a> <!-- selectShippingOption -->
+                  <span class="method-name">selectShippingOption</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyOrder">
+                  </a> <!-- verifyOrder -->
+                  <span class="method-name">verifyOrder</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyProduct(Custom T-Shirt, $25.99, http://localhost/Avactis/product-info.php?Custom_T-Shirt_-_Upload_your_own_d...)">
+                  </a> <!-- verifyProduct(Custom T-Shirt, $25.99, http://localhost/Avactis/product-info.php?Custom_T-Shirt_-_Upload_your_own_d...) -->
+                  <span class="method-name">verifyProduct</span>
+                  <span class="parameters">(Custom T-Shirt, $25.99, http://localhost/Avactis/product-info.php?Custom_T-Shirt_-_Upload_your_own_design-pid35.html)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyProduct(EKTORP Neckroll, $9.99, http://localhost/Avactis/product-info.php?EKTORP_Neckroll-pid169.html)">
+                  </a> <!-- verifyProduct(EKTORP Neckroll, $9.99, http://localhost/Avactis/product-info.php?EKTORP_Neckroll-pid169.html) -->
+                  <span class="method-name">verifyProduct</span>
+                  <span class="parameters">(EKTORP Neckroll, $9.99, http://localhost/Avactis/product-info.php?EKTORP_Neckroll-pid169.html)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyProduct(HP TouchSmart, $799.99, http://localhost/Avactis/product-info.php?HP_TouchSmart-pid31.html)">
+                  </a> <!-- verifyProduct(HP TouchSmart, $799.99, http://localhost/Avactis/product-info.php?HP_TouchSmart-pid31.html) -->
+                  <span class="method-name">verifyProduct</span>
+                  <span class="parameters">(HP TouchSmart, $799.99, http://localhost/Avactis/product-info.php?HP_TouchSmart-pid31.html)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Application.AvactisGuestUser</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ProductHomePage(Custom T-Shirt, $25.99, http://localhost/Avactis/product-info.php?Custom_T-Shirt_-_Upload_your_own_d...)">
+                  </a> <!-- ProductHomePage(Custom T-Shirt, $25.99, http://localhost/Avactis/product-info.php?Custom_T-Shirt_-_Upload_your_own_d...) -->
+                  <span class="method-name">ProductHomePage</span>
+                  <span class="parameters">(Custom T-Shirt, $25.99, http://localhost/Avactis/product-info.php?Custom_T-Shirt_-_Upload_your_own_design-pid35.html)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ProductHomePage(EKTORP Neckroll, $9.99, http://localhost/Avactis/product-info.php?EKTORP_Neckroll-pid169.html)">
+                  </a> <!-- ProductHomePage(EKTORP Neckroll, $9.99, http://localhost/Avactis/product-info.php?EKTORP_Neckroll-pid169.html) -->
+                  <span class="method-name">ProductHomePage</span>
+                  <span class="parameters">(EKTORP Neckroll, $9.99, http://localhost/Avactis/product-info.php?EKTORP_Neckroll-pid169.html)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ProductHomePage(HP TouchSmart, $799.99, http://localhost/Avactis/product-info.php?HP_TouchSmart-pid31.html)">
+                  </a> <!-- ProductHomePage(HP TouchSmart, $799.99, http://localhost/Avactis/product-info.php?HP_TouchSmart-pid31.html) -->
+                  <span class="method-name">ProductHomePage</span>
+                  <span class="parameters">(HP TouchSmart, $799.99, http://localhost/Avactis/product-info.php?HP_TouchSmart-pid31.html)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="adminLogin(testadmin@admin.com, Test@1234)">
+                  </a> <!-- adminLogin(testadmin@admin.com, Test@1234) -->
+                  <span class="method-name">adminLogin</span>
+                  <span class="parameters">(testadmin@admin.com, Test@1234)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="adminLogin(dhawal11435@gmail.com, Dh@wearetogether143)">
+                  </a> <!-- adminLogin(dhawal11435@gmail.com, Dh@wearetogether143) -->
+                  <span class="method-name">adminLogin</span>
+                  <span class="parameters">(dhawal11435@gmail.com, Dh@wearetogether143)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkDetails">
+                  </a> <!-- checkDetails -->
+                  <span class="method-name">checkDetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickCheckout">
+                  </a> <!-- clickCheckout -->
+                  <span class="method-name">clickCheckout</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickOnContinueCheckout">
+                  </a> <!-- clickOnContinueCheckout -->
+                  <span class="method-name">clickOnContinueCheckout</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickOnContinueCheckout2">
+                  </a> <!-- clickOnContinueCheckout2 -->
+                  <span class="method-name">clickOnContinueCheckout2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickOnCustomer">
+                  </a> <!-- clickOnCustomer -->
+                  <span class="method-name">clickOnCustomer</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickPlaceOrder">
+                  </a> <!-- clickPlaceOrder -->
+                  <span class="method-name">clickPlaceOrder</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickViewCart">
+                  </a> <!-- clickViewCart -->
+                  <span class="method-name">clickViewCart</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="customerHome">
+                  </a> <!-- customerHome -->
+                  <span class="method-name">customerHome</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="guestCustomerDetails(guest, test, guest1234@testersite.com, United States, 12345, Alabama, pune, address1, address2, 1234...)">
+                  </a> <!-- guestCustomerDetails(guest, test, guest1234@testersite.com, United States, 12345, Alabama, pune, address1, address2, 1234...) -->
+                  <span class="method-name">guestCustomerDetails</span>
+                  <span class="parameters">(guest, test, guest1234@testersite.com, United States, 12345, Alabama, pune, address1, address2, 12345)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="selectBillingOption">
+                  </a> <!-- selectBillingOption -->
+                  <span class="method-name">selectBillingOption</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="selectShippingOption">
+                  </a> <!-- selectShippingOption -->
+                  <span class="method-name">selectShippingOption</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyOrder">
+                  </a> <!-- verifyOrder -->
+                  <span class="method-name">verifyOrder</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyProduct(Custom T-Shirt, $25.99, http://localhost/Avactis/product-info.php?Custom_T-Shirt_-_Upload_your_own_d...)">
+                  </a> <!-- verifyProduct(Custom T-Shirt, $25.99, http://localhost/Avactis/product-info.php?Custom_T-Shirt_-_Upload_your_own_d...) -->
+                  <span class="method-name">verifyProduct</span>
+                  <span class="parameters">(Custom T-Shirt, $25.99, http://localhost/Avactis/product-info.php?Custom_T-Shirt_-_Upload_your_own_design-pid35.html)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyProduct(EKTORP Neckroll, $9.99, http://localhost/Avactis/product-info.php?EKTORP_Neckroll-pid169.html)">
+                  </a> <!-- verifyProduct(EKTORP Neckroll, $9.99, http://localhost/Avactis/product-info.php?EKTORP_Neckroll-pid169.html) -->
+                  <span class="method-name">verifyProduct</span>
+                  <span class="parameters">(EKTORP Neckroll, $9.99, http://localhost/Avactis/product-info.php?EKTORP_Neckroll-pid169.html)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyProduct(HP TouchSmart, $799.99, http://localhost/Avactis/product-info.php?HP_TouchSmart-pid31.html)">
+                  </a> <!-- verifyProduct(HP TouchSmart, $799.99, http://localhost/Avactis/product-info.php?HP_TouchSmart-pid31.html) -->
+                  <span class="method-name">verifyProduct</span>
+                  <span class="parameters">(HP TouchSmart, $799.99, http://localhost/Avactis/product-info.php?HP_TouchSmart-pid31.html)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\kejal\eclipse-workspace\MavenAvactisProject\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Suite&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;FirefoxTest&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Application.AvactisRegisteredUser&quot;/&gt;
+      &lt;class name=&quot;Application.AvactisGuestUser&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- FirefoxTest --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">FirefoxTest (2 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(44);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'checkDetails')
+data.setCell(0, 2, 'Application.AvactisRegisteredUser')
+data.setCell(0, 3, 26276);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'checkDetails')
+data.setCell(1, 2, 'Application.AvactisGuestUser')
+data.setCell(1, 3, 25718);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'CustomerRegister')
+data.setCell(2, 2, 'Application.AvactisRegisteredUser')
+data.setCell(2, 3, 16454);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'CustomerRegister')
+data.setCell(3, 2, 'Application.AvactisRegisteredUser')
+data.setCell(3, 3, 15600);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'CustomerRegister')
+data.setCell(4, 2, 'Application.AvactisRegisteredUser')
+data.setCell(4, 3, 14947);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'ProductHomePage')
+data.setCell(5, 2, 'Application.AvactisRegisteredUser')
+data.setCell(5, 3, 11747);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'customerHome')
+data.setCell(6, 2, 'Application.AvactisGuestUser')
+data.setCell(6, 3, 11699);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'ProductHomePage')
+data.setCell(7, 2, 'Application.AvactisRegisteredUser')
+data.setCell(7, 3, 11512);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'ProductHomePage')
+data.setCell(8, 2, 'Application.AvactisGuestUser')
+data.setCell(8, 3, 11363);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'ProductHomePage')
+data.setCell(9, 2, 'Application.AvactisGuestUser')
+data.setCell(9, 3, 11228);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'ProductHomePage')
+data.setCell(10, 2, 'Application.AvactisRegisteredUser')
+data.setCell(10, 3, 11038);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'ProductHomePage')
+data.setCell(11, 2, 'Application.AvactisGuestUser')
+data.setCell(11, 3, 10811);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'verifyOrder')
+data.setCell(12, 2, 'Application.AvactisGuestUser')
+data.setCell(12, 3, 10584);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'CustomerHome')
+data.setCell(13, 2, 'Application.AvactisRegisteredUser')
+data.setCell(13, 3, 10298);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'verifyOrder')
+data.setCell(14, 2, 'Application.AvactisRegisteredUser')
+data.setCell(14, 3, 9841);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'clickPlaceOrder')
+data.setCell(15, 2, 'Application.AvactisRegisteredUser')
+data.setCell(15, 3, 9264);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'clickPlaceOrder')
+data.setCell(16, 2, 'Application.AvactisGuestUser')
+data.setCell(16, 3, 9053);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'clickOnCustomer')
+data.setCell(17, 2, 'Application.AvactisRegisteredUser')
+data.setCell(17, 3, 8990);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'clickOnCustomer')
+data.setCell(18, 2, 'Application.AvactisGuestUser')
+data.setCell(18, 3, 8871);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'clickViewCart')
+data.setCell(19, 2, 'Application.AvactisGuestUser')
+data.setCell(19, 3, 8815);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'adminLogin')
+data.setCell(20, 2, 'Application.AvactisRegisteredUser')
+data.setCell(20, 3, 8755);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'adminLogin')
+data.setCell(21, 2, 'Application.AvactisGuestUser')
+data.setCell(21, 3, 7859);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'adminLogin')
+data.setCell(22, 2, 'Application.AvactisGuestUser')
+data.setCell(22, 3, 6440);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'clickCheckout')
+data.setCell(23, 2, 'Application.AvactisRegisteredUser')
+data.setCell(23, 3, 5806);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'adminLogin')
+data.setCell(24, 2, 'Application.AvactisRegisteredUser')
+data.setCell(24, 3, 5785);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'clickCheckout')
+data.setCell(25, 2, 'Application.AvactisGuestUser')
+data.setCell(25, 3, 5696);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'verifyProduct')
+data.setCell(26, 2, 'Application.AvactisRegisteredUser')
+data.setCell(26, 3, 5033);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'clickViewCart')
+data.setCell(27, 2, 'Application.AvactisRegisteredUser')
+data.setCell(27, 3, 4411);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'CustomerSignedInPage')
+data.setCell(28, 2, 'Application.AvactisRegisteredUser')
+data.setCell(28, 3, 4295);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'selectBillingOption')
+data.setCell(29, 2, 'Application.AvactisGuestUser')
+data.setCell(29, 3, 3922);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'selectBillingOption')
+data.setCell(30, 2, 'Application.AvactisRegisteredUser')
+data.setCell(30, 3, 3908);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'guestCustomerDetails')
+data.setCell(31, 2, 'Application.AvactisGuestUser')
+data.setCell(31, 3, 3059);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'clickOnContinueCheckout')
+data.setCell(32, 2, 'Application.AvactisRegisteredUser')
+data.setCell(32, 3, 1204);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'clickOnContinueCheckout2')
+data.setCell(33, 2, 'Application.AvactisRegisteredUser')
+data.setCell(33, 3, 525);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'selectShippingOption')
+data.setCell(34, 2, 'Application.AvactisRegisteredUser')
+data.setCell(34, 3, 511);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'selectShippingOption')
+data.setCell(35, 2, 'Application.AvactisGuestUser')
+data.setCell(35, 3, 510);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'clickOnContinueCheckout')
+data.setCell(36, 2, 'Application.AvactisGuestUser')
+data.setCell(36, 3, 461);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'verifyProduct')
+data.setCell(37, 2, 'Application.AvactisGuestUser')
+data.setCell(37, 3, 432);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'clickOnContinueCheckout2')
+data.setCell(38, 2, 'Application.AvactisGuestUser')
+data.setCell(38, 3, 348);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'verifyProduct')
+data.setCell(39, 2, 'Application.AvactisGuestUser')
+data.setCell(39, 3, 304);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'verifyProduct')
+data.setCell(40, 2, 'Application.AvactisRegisteredUser')
+data.setCell(40, 3, 270);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'verifyProduct')
+data.setCell(41, 2, 'Application.AvactisGuestUser')
+data.setCell(41, 3, 204);
+data.setCell(42, 0, 42)
+data.setCell(42, 1, 'verifyProduct')
+data.setCell(42, 2, 'Application.AvactisRegisteredUser')
+data.setCell(42, 3, 116);
+data.setCell(43, 0, 43)
+data.setCell(43, 1, 'CustomerSignIn')
+data.setCell(43, 2, 'Application.AvactisRegisteredUser')
+data.setCell(43, 3, 8);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 5 minutes</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">Application.AvactisRegisteredUser</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">init(firefox)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">CustomerHome</span>
+                <span class="method-start">12205 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">CustomerRegister(test1, password1, password2, name1, lastname1, India, Goa, zip, city, address1, address2, 12345)</span>
+                <span class="method-start">22519 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">CustomerRegister(test1@gmail.com, password1, password112, name1, lastname1, United States, Alabama, zip, city, addres...)</span>
+                <span class="method-start">37466 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">CustomerRegister(test1234@testsite.com, Test@1234, Test@1234, tester, mike, United States, Alabama, 12345, Pune, stre...)</span>
+                <span class="method-start">53920 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">CustomerSignIn(test1234@testsite.com, Test@1234)</span>
+                <span class="method-start">69524 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">CustomerSignedInPage</span>
+                <span class="method-start">69536 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ProductHomePage(HP TouchSmart, $799.99, http://localhost/Avactis/product-info.php?HP_TouchSmart-pid31.html)</span>
+                <span class="method-start">73835 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ProductHomePage(Custom T-Shirt, $25.99, http://localhost/Avactis/product-info.php?Custom_T-Shirt_-_Upload_your_own_d...)</span>
+                <span class="method-start">84873 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ProductHomePage(EKTORP Neckroll, $9.99, http://localhost/Avactis/product-info.php?EKTORP_Neckroll-pid169.html)</span>
+                <span class="method-start">96385 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">clickViewCart</span>
+                <span class="method-start">108132 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyProduct(HP TouchSmart, $799.99, http://localhost/Avactis/product-info.php?HP_TouchSmart-pid31.html)</span>
+                <span class="method-start">112547 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyProduct(Custom T-Shirt, $25.99, http://localhost/Avactis/product-info.php?Custom_T-Shirt_-_Upload_your_own_d...)</span>
+                <span class="method-start">117580 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyProduct(EKTORP Neckroll, $9.99, http://localhost/Avactis/product-info.php?EKTORP_Neckroll-pid169.html)</span>
+                <span class="method-start">117850 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">clickCheckout</span>
+                <span class="method-start">117970 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">clickOnContinueCheckout</span>
+                <span class="method-start">123776 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">selectBillingOption</span>
+                <span class="method-start">124984 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">selectShippingOption</span>
+                <span class="method-start">128896 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">clickOnContinueCheckout2</span>
+                <span class="method-start">129407 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">clickPlaceOrder</span>
+                <span class="method-start">129936 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyOrder</span>
+                <span class="method-start">139204 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">adminLogin(testadmin@admin.com, Test@1234)</span>
+                <span class="method-start">149045 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">adminLogin(dhawal11435@gmail.com, Dh@wearetogether143)</span>
+                <span class="method-start">157804 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">clickOnCustomer</span>
+                <span class="method-start">163593 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkDetails</span>
+                <span class="method-start">172583 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Application.AvactisGuestUser</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">init(firefox)</span>
+                <span class="method-start">198859 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">customerHome</span>
+                <span class="method-start">208934 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ProductHomePage(HP TouchSmart, $799.99, http://localhost/Avactis/product-info.php?HP_TouchSmart-pid31.html)</span>
+                <span class="method-start">220635 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ProductHomePage(Custom T-Shirt, $25.99, http://localhost/Avactis/product-info.php?Custom_T-Shirt_-_Upload_your_own_d...)</span>
+                <span class="method-start">231446 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ProductHomePage(EKTORP Neckroll, $9.99, http://localhost/Avactis/product-info.php?EKTORP_Neckroll-pid169.html)</span>
+                <span class="method-start">242809 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">clickViewCart</span>
+                <span class="method-start">254037 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyProduct(HP TouchSmart, $799.99, http://localhost/Avactis/product-info.php?HP_TouchSmart-pid31.html)</span>
+                <span class="method-start">262856 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyProduct(Custom T-Shirt, $25.99, http://localhost/Avactis/product-info.php?Custom_T-Shirt_-_Upload_your_own_d...)</span>
+                <span class="method-start">263291 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyProduct(EKTORP Neckroll, $9.99, http://localhost/Avactis/product-info.php?EKTORP_Neckroll-pid169.html)</span>
+                <span class="method-start">263595 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">clickCheckout</span>
+                <span class="method-start">263804 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">guestCustomerDetails(guest, test, guest1234@testersite.com, United States, 12345, Alabama, pune, address1, address2, 1234...)</span>
+                <span class="method-start">269504 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">clickOnContinueCheckout</span>
+                <span class="method-start">272563 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">selectBillingOption</span>
+                <span class="method-start">273028 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">selectShippingOption</span>
+                <span class="method-start">276954 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">clickOnContinueCheckout2</span>
+                <span class="method-start">277468 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">clickPlaceOrder</span>
+                <span class="method-start">277820 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyOrder</span>
+                <span class="method-start">286873 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">adminLogin(testadmin@admin.com, Test@1234)</span>
+                <span class="method-start">297461 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">adminLogin(dhawal11435@gmail.com, Dh@wearetogether143)</span>
+                <span class="method-start">305324 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">clickOnCustomer</span>
+                <span class="method-start">311768 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkDetails</span>
+                <span class="method-start">320639 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

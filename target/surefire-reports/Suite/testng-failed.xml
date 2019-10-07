@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
+  <test thread-count="5" verbose="0" name="FirefoxTest(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="Application.AvactisRegisteredUser">
+        <methods>
+          <include name="CustomerSignIn"/>
+          <include name="ProductHomePage"/>
+          <include name="clickViewCart"/>
+          <include name="verifyOrder"/>
+          <include name="clickCheckout"/>
+          <include name="adminLogin"/>
+          <include name="CustomerRegister"/>
+          <include name="clickPlaceOrder"/>
+          <include name="CustomerHome"/>
+          <include name="CustomerSignedInPage"/>
+          <include name="checkDetails"/>
+          <include name="init"/>
+          <include name="clickOnContinueCheckout2"/>
+          <include name="clickOnContinueCheckout"/>
+          <include name="clickOnCustomer"/>
+          <include name="verifyProduct"/>
+          <include name="selectShippingOption"/>
+          <include name="selectBillingOption"/>
+        </methods>
+      </class> <!-- Application.AvactisRegisteredUser -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->

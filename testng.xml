@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="false">
+ 
+  <test thread-count="5" name="FirefoxTest">
+  <parameter name="browser" value="firefox"> </parameter>
+   <classes>   	   
+     <class name="Application.AvactisRegisteredUser"/>
+     <class name="Application.AvactisGuestUser"/>
+   </classes>
+  </test> <!-- Test -->
+
+  
+</suite> <!-- Suite -->

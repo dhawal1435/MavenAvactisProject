@@ -1,0 +1,715 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="44" passed="44">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="346373" started-at="2019-10-06T10:22:16Z" finished-at="2019-10-06T10:28:02Z">
+    <groups>
+    </groups>
+    <test name="FirefoxTest" duration-ms="346373" started-at="2019-10-06T10:22:16Z" finished-at="2019-10-06T10:28:02Z">
+      <class name="Application.AvactisGuestUser">
+        <test-method status="PASS" signature="init(java.lang.String)[pri:0, instance:Application.AvactisGuestUser@3c09711b]" name="init" is-config="true" duration-ms="10075" started-at="2019-10-06T10:25:35Z" finished-at="2019-10-06T10:25:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="customerHome()[pri:0, instance:Application.AvactisGuestUser@3c09711b]" name="customerHome" duration-ms="11699" started-at="2019-10-06T10:25:45Z" finished-at="2019-10-06T10:25:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- customerHome -->
+        <test-method status="PASS" signature="ProductHomePage(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Application.AvactisGuestUser@3c09711b]" name="ProductHomePage" duration-ms="10811" started-at="2019-10-06T10:25:57Z" data-provider="provideProductData" depends-on-methods="Application.AvactisGuestUser.customerHome" finished-at="2019-10-06T10:26:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[HP TouchSmart]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[$799.99]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[http://localhost/Avactis/product-info.php?HP_TouchSmart-pid31.html]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProductHomePage -->
+        <test-method status="PASS" signature="ProductHomePage(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Application.AvactisGuestUser@3c09711b]" name="ProductHomePage" duration-ms="11363" started-at="2019-10-06T10:26:07Z" data-provider="provideProductData" depends-on-methods="Application.AvactisGuestUser.customerHome" finished-at="2019-10-06T10:26:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Custom T-Shirt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[$25.99]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[http://localhost/Avactis/product-info.php?Custom_T-Shirt_-_Upload_your_own_design-pid35.html]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProductHomePage -->
+        <test-method status="PASS" signature="ProductHomePage(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Application.AvactisGuestUser@3c09711b]" name="ProductHomePage" duration-ms="11228" started-at="2019-10-06T10:26:19Z" data-provider="provideProductData" depends-on-methods="Application.AvactisGuestUser.customerHome" finished-at="2019-10-06T10:26:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[EKTORP Neckroll]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[$9.99]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[http://localhost/Avactis/product-info.php?EKTORP_Neckroll-pid169.html]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProductHomePage -->
+        <test-method status="PASS" signature="clickViewCart()[pri:0, instance:Application.AvactisGuestUser@3c09711b]" name="clickViewCart" duration-ms="8815" started-at="2019-10-06T10:26:30Z" depends-on-methods="Application.AvactisGuestUser.ProductHomePage" finished-at="2019-10-06T10:26:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickViewCart -->
+        <test-method status="PASS" signature="verifyProduct(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Application.AvactisGuestUser@3c09711b]" name="verifyProduct" duration-ms="432" started-at="2019-10-06T10:26:39Z" data-provider="provideProductData" depends-on-methods="Application.AvactisGuestUser.clickViewCart" finished-at="2019-10-06T10:26:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[HP TouchSmart]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[$799.99]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[http://localhost/Avactis/product-info.php?HP_TouchSmart-pid31.html]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProduct -->
+        <test-method status="PASS" signature="verifyProduct(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Application.AvactisGuestUser@3c09711b]" name="verifyProduct" duration-ms="304" started-at="2019-10-06T10:26:39Z" data-provider="provideProductData" depends-on-methods="Application.AvactisGuestUser.clickViewCart" finished-at="2019-10-06T10:26:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Custom T-Shirt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[$25.99]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[http://localhost/Avactis/product-info.php?Custom_T-Shirt_-_Upload_your_own_design-pid35.html]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProduct -->
+        <test-method status="PASS" signature="verifyProduct(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Application.AvactisGuestUser@3c09711b]" name="verifyProduct" duration-ms="204" started-at="2019-10-06T10:26:40Z" data-provider="provideProductData" depends-on-methods="Application.AvactisGuestUser.clickViewCart" finished-at="2019-10-06T10:26:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[EKTORP Neckroll]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[$9.99]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[http://localhost/Avactis/product-info.php?EKTORP_Neckroll-pid169.html]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProduct -->
+        <test-method status="PASS" signature="clickCheckout()[pri:0, instance:Application.AvactisGuestUser@3c09711b]" name="clickCheckout" duration-ms="5696" started-at="2019-10-06T10:26:40Z" depends-on-methods="Application.AvactisGuestUser.verifyProduct" finished-at="2019-10-06T10:26:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickCheckout -->
+        <test-method status="PASS" signature="guestCustomerDetails(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Application.AvactisGuestUser@3c09711b]" name="guestCustomerDetails" duration-ms="3059" started-at="2019-10-06T10:26:45Z" data-provider="provideGuestUserData" depends-on-methods="Application.AvactisGuestUser.clickCheckout" finished-at="2019-10-06T10:26:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[guest]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[guest1234@testersite.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[United States]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[12345]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Alabama]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[pune]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[address1]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[address2]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[12345]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- guestCustomerDetails -->
+        <test-method status="PASS" signature="clickOnContinueCheckout()[pri:0, instance:Application.AvactisGuestUser@3c09711b]" name="clickOnContinueCheckout" duration-ms="461" started-at="2019-10-06T10:26:49Z" depends-on-methods="Application.AvactisGuestUser.guestCustomerDetails" finished-at="2019-10-06T10:26:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnContinueCheckout -->
+        <test-method status="PASS" signature="selectBillingOption()[pri:0, instance:Application.AvactisGuestUser@3c09711b]" name="selectBillingOption" duration-ms="3922" started-at="2019-10-06T10:26:49Z" depends-on-methods="Application.AvactisGuestUser.clickOnContinueCheckout" finished-at="2019-10-06T10:26:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectBillingOption -->
+        <test-method status="PASS" signature="selectShippingOption()[pri:0, instance:Application.AvactisGuestUser@3c09711b]" name="selectShippingOption" duration-ms="510" started-at="2019-10-06T10:26:53Z" depends-on-methods="Application.AvactisGuestUser.selectBillingOption" finished-at="2019-10-06T10:26:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectShippingOption -->
+        <test-method status="PASS" signature="clickOnContinueCheckout2()[pri:0, instance:Application.AvactisGuestUser@3c09711b]" name="clickOnContinueCheckout2" duration-ms="348" started-at="2019-10-06T10:26:53Z" depends-on-methods="Application.AvactisGuestUser.selectShippingOption" finished-at="2019-10-06T10:26:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnContinueCheckout2 -->
+        <test-method status="PASS" signature="clickPlaceOrder()[pri:0, instance:Application.AvactisGuestUser@3c09711b]" name="clickPlaceOrder" duration-ms="9053" started-at="2019-10-06T10:26:54Z" depends-on-methods="Application.AvactisGuestUser.selectShippingOption" finished-at="2019-10-06T10:27:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickPlaceOrder -->
+        <test-method status="PASS" signature="verifyOrder()[pri:0, instance:Application.AvactisGuestUser@3c09711b]" name="verifyOrder" duration-ms="10584" started-at="2019-10-06T10:27:03Z" depends-on-methods="Application.AvactisGuestUser.clickPlaceOrder" finished-at="2019-10-06T10:27:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyOrder -->
+        <test-method status="PASS" signature="adminLogin(java.lang.String, java.lang.String)[pri:0, instance:Application.AvactisGuestUser@3c09711b]" name="adminLogin" duration-ms="7859" started-at="2019-10-06T10:27:13Z" data-provider="provideAdminLoginData" depends-on-methods="Application.AvactisGuestUser.verifyOrder" finished-at="2019-10-06T10:27:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testadmin@admin.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test@1234]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adminLogin -->
+        <test-method status="PASS" signature="adminLogin(java.lang.String, java.lang.String)[pri:0, instance:Application.AvactisGuestUser@3c09711b]" name="adminLogin" duration-ms="6440" started-at="2019-10-06T10:27:21Z" data-provider="provideAdminLoginData" depends-on-methods="Application.AvactisGuestUser.verifyOrder" finished-at="2019-10-06T10:27:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[dhawal11435@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Dh@wearetogether143]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adminLogin -->
+        <test-method status="PASS" signature="clickOnCustomer()[pri:0, instance:Application.AvactisGuestUser@3c09711b]" name="clickOnCustomer" duration-ms="8871" started-at="2019-10-06T10:27:28Z" depends-on-methods="Application.AvactisGuestUser.adminLogin" finished-at="2019-10-06T10:27:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnCustomer -->
+        <test-method status="PASS" signature="checkDetails()[pri:0, instance:Application.AvactisGuestUser@3c09711b]" name="checkDetails" duration-ms="25718" started-at="2019-10-06T10:27:37Z" depends-on-methods="Application.AvactisGuestUser.clickOnCustomer" finished-at="2019-10-06T10:28:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkDetails -->
+      </class> <!-- Application.AvactisGuestUser -->
+      <class name="Application.AvactisRegisteredUser">
+        <test-method status="PASS" signature="init(java.lang.String)[pri:0, instance:Application.AvactisRegisteredUser@7946e1f4]" name="init" is-config="true" duration-ms="12193" started-at="2019-10-06T10:22:16Z" finished-at="2019-10-06T10:22:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="CustomerHome()[pri:0, instance:Application.AvactisRegisteredUser@7946e1f4]" name="CustomerHome" duration-ms="10298" started-at="2019-10-06T10:22:28Z" finished-at="2019-10-06T10:22:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CustomerHome -->
+        <test-method status="PASS" signature="CustomerRegister(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Application.AvactisRegisteredUser@7946e1f4]" name="CustomerRegister" duration-ms="14947" started-at="2019-10-06T10:22:38Z" data-provider="provideCustomerRegisterData" depends-on-methods="Application.AvactisRegisteredUser.CustomerHome" finished-at="2019-10-06T10:22:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[password2]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[name1]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[lastname1]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[India]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Goa]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[zip]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[city]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[address1]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[address2]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[12345]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CustomerRegister -->
+        <test-method status="PASS" signature="CustomerRegister(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Application.AvactisRegisteredUser@7946e1f4]" name="CustomerRegister" duration-ms="16454" started-at="2019-10-06T10:22:53Z" data-provider="provideCustomerRegisterData" depends-on-methods="Application.AvactisRegisteredUser.CustomerHome" finished-at="2019-10-06T10:23:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test1@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[password112]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[name1]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[lastname1]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[United States]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Alabama]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[zip]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[city]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[address1]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[address2]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[12345]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CustomerRegister -->
+        <test-method status="PASS" signature="CustomerRegister(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Application.AvactisRegisteredUser@7946e1f4]" name="CustomerRegister" duration-ms="15600" started-at="2019-10-06T10:23:10Z" data-provider="provideCustomerRegisterData" depends-on-methods="Application.AvactisRegisteredUser.CustomerHome" finished-at="2019-10-06T10:23:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test1234@testsite.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test@1234]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Test@1234]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[tester]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[mike]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[United States]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Alabama]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[12345]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Pune]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[street1]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[lane2]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[12345]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CustomerRegister -->
+        <test-method status="PASS" signature="CustomerSignIn(java.lang.String, java.lang.String)[pri:0, instance:Application.AvactisRegisteredUser@7946e1f4]" name="CustomerSignIn" duration-ms="8" started-at="2019-10-06T10:23:25Z" data-provider="provideCustomerSignInData" depends-on-methods="Application.AvactisRegisteredUser.CustomerRegister" finished-at="2019-10-06T10:23:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test1234@testsite.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test@1234]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CustomerSignIn -->
+        <test-method status="PASS" signature="CustomerSignedInPage()[pri:0, instance:Application.AvactisRegisteredUser@7946e1f4]" name="CustomerSignedInPage" duration-ms="4295" started-at="2019-10-06T10:23:25Z" depends-on-methods="Application.AvactisRegisteredUser.CustomerSignIn" finished-at="2019-10-06T10:23:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CustomerSignedInPage -->
+        <test-method status="PASS" signature="ProductHomePage(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Application.AvactisRegisteredUser@7946e1f4]" name="ProductHomePage" duration-ms="11038" started-at="2019-10-06T10:23:30Z" data-provider="provideProductData" depends-on-methods="Application.AvactisRegisteredUser.CustomerSignedInPage" finished-at="2019-10-06T10:23:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[HP TouchSmart]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[$799.99]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[http://localhost/Avactis/product-info.php?HP_TouchSmart-pid31.html]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProductHomePage -->
+        <test-method status="PASS" signature="ProductHomePage(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Application.AvactisRegisteredUser@7946e1f4]" name="ProductHomePage" duration-ms="11512" started-at="2019-10-06T10:23:41Z" data-provider="provideProductData" depends-on-methods="Application.AvactisRegisteredUser.CustomerSignedInPage" finished-at="2019-10-06T10:23:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Custom T-Shirt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[$25.99]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[http://localhost/Avactis/product-info.php?Custom_T-Shirt_-_Upload_your_own_design-pid35.html]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProductHomePage -->
+        <test-method status="PASS" signature="ProductHomePage(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Application.AvactisRegisteredUser@7946e1f4]" name="ProductHomePage" duration-ms="11747" started-at="2019-10-06T10:23:52Z" data-provider="provideProductData" depends-on-methods="Application.AvactisRegisteredUser.CustomerSignedInPage" finished-at="2019-10-06T10:24:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[EKTORP Neckroll]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[$9.99]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[http://localhost/Avactis/product-info.php?EKTORP_Neckroll-pid169.html]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProductHomePage -->
+        <test-method status="PASS" signature="clickViewCart()[pri:0, instance:Application.AvactisRegisteredUser@7946e1f4]" name="clickViewCart" duration-ms="4411" started-at="2019-10-06T10:24:04Z" depends-on-methods="Application.AvactisRegisteredUser.ProductHomePage" finished-at="2019-10-06T10:24:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickViewCart -->
+        <test-method status="PASS" signature="verifyProduct(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Application.AvactisRegisteredUser@7946e1f4]" name="verifyProduct" duration-ms="5033" started-at="2019-10-06T10:24:08Z" data-provider="provideProductData" depends-on-methods="Application.AvactisRegisteredUser.clickViewCart" finished-at="2019-10-06T10:24:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[HP TouchSmart]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[$799.99]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[http://localhost/Avactis/product-info.php?HP_TouchSmart-pid31.html]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProduct -->
+        <test-method status="PASS" signature="verifyProduct(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Application.AvactisRegisteredUser@7946e1f4]" name="verifyProduct" duration-ms="270" started-at="2019-10-06T10:24:14Z" data-provider="provideProductData" depends-on-methods="Application.AvactisRegisteredUser.clickViewCart" finished-at="2019-10-06T10:24:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Custom T-Shirt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[$25.99]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[http://localhost/Avactis/product-info.php?Custom_T-Shirt_-_Upload_your_own_design-pid35.html]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProduct -->
+        <test-method status="PASS" signature="verifyProduct(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Application.AvactisRegisteredUser@7946e1f4]" name="verifyProduct" duration-ms="116" started-at="2019-10-06T10:24:14Z" data-provider="provideProductData" depends-on-methods="Application.AvactisRegisteredUser.clickViewCart" finished-at="2019-10-06T10:24:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[EKTORP Neckroll]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[$9.99]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[http://localhost/Avactis/product-info.php?EKTORP_Neckroll-pid169.html]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProduct -->
+        <test-method status="PASS" signature="clickCheckout()[pri:0, instance:Application.AvactisRegisteredUser@7946e1f4]" name="clickCheckout" duration-ms="5806" started-at="2019-10-06T10:24:14Z" depends-on-methods="Application.AvactisRegisteredUser.verifyProduct" finished-at="2019-10-06T10:24:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickCheckout -->
+        <test-method status="PASS" signature="clickOnContinueCheckout()[pri:0, instance:Application.AvactisRegisteredUser@7946e1f4]" name="clickOnContinueCheckout" duration-ms="1204" started-at="2019-10-06T10:24:20Z" depends-on-methods="Application.AvactisRegisteredUser.clickCheckout" finished-at="2019-10-06T10:24:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnContinueCheckout -->
+        <test-method status="PASS" signature="selectBillingOption()[pri:0, instance:Application.AvactisRegisteredUser@7946e1f4]" name="selectBillingOption" duration-ms="3908" started-at="2019-10-06T10:24:21Z" depends-on-methods="Application.AvactisRegisteredUser.clickOnContinueCheckout" finished-at="2019-10-06T10:24:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectBillingOption -->
+        <test-method status="PASS" signature="selectShippingOption()[pri:0, instance:Application.AvactisRegisteredUser@7946e1f4]" name="selectShippingOption" duration-ms="511" started-at="2019-10-06T10:24:25Z" depends-on-methods="Application.AvactisRegisteredUser.selectBillingOption" finished-at="2019-10-06T10:24:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectShippingOption -->
+        <test-method status="PASS" signature="clickOnContinueCheckout2()[pri:0, instance:Application.AvactisRegisteredUser@7946e1f4]" name="clickOnContinueCheckout2" duration-ms="525" started-at="2019-10-06T10:24:25Z" depends-on-methods="Application.AvactisRegisteredUser.selectShippingOption" finished-at="2019-10-06T10:24:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnContinueCheckout2 -->
+        <test-method status="PASS" signature="clickPlaceOrder()[pri:0, instance:Application.AvactisRegisteredUser@7946e1f4]" name="clickPlaceOrder" duration-ms="9264" started-at="2019-10-06T10:24:26Z" depends-on-methods="Application.AvactisRegisteredUser.clickOnContinueCheckout2" finished-at="2019-10-06T10:24:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickPlaceOrder -->
+        <test-method status="PASS" signature="verifyOrder()[pri:0, instance:Application.AvactisRegisteredUser@7946e1f4]" name="verifyOrder" duration-ms="9841" started-at="2019-10-06T10:24:35Z" depends-on-methods="Application.AvactisRegisteredUser.clickPlaceOrder" finished-at="2019-10-06T10:24:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyOrder -->
+        <test-method status="PASS" signature="adminLogin(java.lang.String, java.lang.String)[pri:0, instance:Application.AvactisRegisteredUser@7946e1f4]" name="adminLogin" duration-ms="8755" started-at="2019-10-06T10:24:45Z" data-provider="provideAdminLoginData" depends-on-methods="Application.AvactisRegisteredUser.verifyOrder" finished-at="2019-10-06T10:24:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testadmin@admin.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test@1234]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adminLogin -->
+        <test-method status="PASS" signature="adminLogin(java.lang.String, java.lang.String)[pri:0, instance:Application.AvactisRegisteredUser@7946e1f4]" name="adminLogin" duration-ms="5785" started-at="2019-10-06T10:24:54Z" data-provider="provideAdminLoginData" depends-on-methods="Application.AvactisRegisteredUser.verifyOrder" finished-at="2019-10-06T10:25:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[dhawal11435@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Dh@wearetogether143]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adminLogin -->
+        <test-method status="PASS" signature="clickOnCustomer()[pri:0, instance:Application.AvactisRegisteredUser@7946e1f4]" name="clickOnCustomer" duration-ms="8990" started-at="2019-10-06T10:25:00Z" depends-on-methods="Application.AvactisRegisteredUser.adminLogin" finished-at="2019-10-06T10:25:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnCustomer -->
+        <test-method status="PASS" signature="checkDetails()[pri:0, instance:Application.AvactisRegisteredUser@7946e1f4]" name="checkDetails" duration-ms="26276" started-at="2019-10-06T10:25:09Z" depends-on-methods="Application.AvactisRegisteredUser.clickOnCustomer" finished-at="2019-10-06T10:25:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkDetails -->
+      </class> <!-- Application.AvactisRegisteredUser -->
+    </test> <!-- FirefoxTest -->
+  </suite> <!-- Suite -->
+</testng-results>

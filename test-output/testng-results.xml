@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="8" passed="8">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="125809" started-at="2019-10-06T10:14:23Z" finished-at="2019-10-06T10:16:28Z">
+    <groups>
+    </groups>
+    <test name="FirefoxTest" duration-ms="125809" started-at="2019-10-06T10:14:23Z" finished-at="2019-10-06T10:16:28Z">
+      <class name="Application.AvactisGuestUser">
+        <test-method status="PASS" signature="init(java.lang.String)[pri:0, instance:Application.AvactisGuestUser@589838eb]" name="init" is-config="true" duration-ms="9563" started-at="2019-10-06T10:15:26Z" finished-at="2019-10-06T10:15:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="adminLogin(java.lang.String, java.lang.String)[pri:0, instance:Application.AvactisGuestUser@589838eb]" name="adminLogin" duration-ms="9488" started-at="2019-10-06T10:15:35Z" data-provider="provideAdminLoginData" finished-at="2019-10-06T10:15:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testadmin@admin.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test@1234]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adminLogin -->
+        <test-method status="PASS" signature="adminLogin(java.lang.String, java.lang.String)[pri:0, instance:Application.AvactisGuestUser@589838eb]" name="adminLogin" duration-ms="6455" started-at="2019-10-06T10:15:45Z" data-provider="provideAdminLoginData" finished-at="2019-10-06T10:15:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[dhawal11435@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Dh@wearetogether143]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adminLogin -->
+        <test-method status="PASS" signature="clickOnCustomer()[pri:0, instance:Application.AvactisGuestUser@589838eb]" name="clickOnCustomer" duration-ms="9404" started-at="2019-10-06T10:15:51Z" depends-on-methods="Application.AvactisGuestUser.adminLogin" finished-at="2019-10-06T10:16:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnCustomer -->
+        <test-method status="PASS" signature="checkDetails()[pri:0, instance:Application.AvactisGuestUser@589838eb]" name="checkDetails" duration-ms="27751" started-at="2019-10-06T10:16:01Z" depends-on-methods="Application.AvactisGuestUser.clickOnCustomer" finished-at="2019-10-06T10:16:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkDetails -->
+      </class> <!-- Application.AvactisGuestUser -->
+      <class name="Application.AvactisRegisteredUser">
+        <test-method status="PASS" signature="init(java.lang.String)[pri:0, instance:Application.AvactisRegisteredUser@271053e1]" name="init" is-config="true" duration-ms="11335" started-at="2019-10-06T10:14:23Z" finished-at="2019-10-06T10:14:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="adminLogin(java.lang.String, java.lang.String)[pri:0, instance:Application.AvactisRegisteredUser@271053e1]" name="adminLogin" duration-ms="9477" started-at="2019-10-06T10:14:34Z" data-provider="provideAdminLoginData" finished-at="2019-10-06T10:14:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testadmin@admin.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test@1234]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adminLogin -->
+        <test-method status="PASS" signature="adminLogin(java.lang.String, java.lang.String)[pri:0, instance:Application.AvactisRegisteredUser@271053e1]" name="adminLogin" duration-ms="5996" started-at="2019-10-06T10:14:43Z" data-provider="provideAdminLoginData" finished-at="2019-10-06T10:14:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[dhawal11435@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Dh@wearetogether143]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adminLogin -->
+        <test-method status="PASS" signature="clickOnCustomer()[pri:0, instance:Application.AvactisRegisteredUser@271053e1]" name="clickOnCustomer" duration-ms="9370" started-at="2019-10-06T10:14:49Z" depends-on-methods="Application.AvactisRegisteredUser.adminLogin" finished-at="2019-10-06T10:14:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnCustomer -->
+        <test-method status="PASS" signature="checkDetails()[pri:0, instance:Application.AvactisRegisteredUser@271053e1]" name="checkDetails" duration-ms="26896" started-at="2019-10-06T10:14:59Z" depends-on-methods="Application.AvactisRegisteredUser.clickOnCustomer" finished-at="2019-10-06T10:15:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkDetails -->
+      </class> <!-- Application.AvactisRegisteredUser -->
+    </test> <!-- FirefoxTest -->
+  </suite> <!-- Suite -->
+</testng-results>

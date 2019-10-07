@@ -1,0 +1,17 @@
+Application\ProductVerifyPage.class
+ApplicationTest\AvactisGuestUser.class
+Application\CustomerHomePage.class
+Application\AdminDashboard.class
+Application\TestAvactis.class
+Application\AdminLoginPage.class
+Application\ProductSelectPage.class
+Application\CustomerRegisterPage.class
+Application\CheckoutPage.class
+Application\CustomerSignedIn.class
+Application\OrderedPage.class
+ApplicationTest\AvactisRegisteredUser.class
+Application\ProductHomePage.class
+Application\adminCustomerPage.class
+Application\Utilities.class
+Application\AvactisRegisteredUser.class
+Application\AvactisGuestUser.class
